@@ -11,6 +11,23 @@ class LinkedList {
     insertFirst(item) {
         this.head = new _Node(item, this.head);
     }
+    
+    insertBefore(value, item) {
+        if(!this.head) {return null}
+        if(!this.head.value === value){
+            this.insertFirst(item);
+            return;
+        } 
+        let currentNode = this.head;
+        let previousNode = this.head;
+        while(currentNode.value !== value){
+            if (!currentNode.next) {return null}
+            previousNode = currentNode;
+            currentNode = currentNode.next;
+        }
+        previousNode.next = new _Node(item, currentNode);
+
+    }
     insertLast(item) {
         if (this.head === null) {
             this.insertFirst(item);
