@@ -1,8 +1,8 @@
-const linkList = require('./linkedList')
+const LinkList = require('./linkedList')
 
 function main() {
     
-    const SLL = new linkList()
+    const SLL = new LinkList()
     
     SLL.insertFirst('Apollo')
     SLL.insertFirst('Boomer')

@@ -74,9 +74,10 @@ class LinkedList {
     }
 
 }
-/* function main() {
+module.exports = LinkedList;
+ /* function main() {
    
-    const SLL = new linkList();
+     const SLL = new LinkedList();
 
     SLL.insertFirst('Apollo')
     SLL.insertFirst('Boomer')
@@ -86,5 +87,4 @@ class LinkedList {
     return SLL
 
 }
-console.log(main()) */
-exports.module = LinkedList;
+console.log(main()) */ 
