@@ -4,12 +4,15 @@ function main() {
     
     const SLL = new LinkList()
     
-    SLL.insertFirst('Apollo')
-    SLL.insertFirst('Boomer')
-    SLL.insertFirst('Helo')
-    SLL.insertFirst('Husker')
-    SLL.insertFirst('Starbuck')
+    SLL.insertLast('Apollo')
+    SLL.insertLast('Boomer')
+    SLL.insertLast('Helo')
+    SLL.insertLast('Husker')
+    SLL.insertLast('Starbuck')
+    
+    SLL.insertLast('Tauhida')
+    SLL.remove('Husker')
     return SLL
     
 }
-console.log(main())
+console.log(JSON.stringify(main(), null, 2))
